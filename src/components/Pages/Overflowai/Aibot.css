@@ -1,0 +1,356 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+.main {
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+}
+
+.main .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    color: #585858;
+    ;
+}
+
+.main .nav p {
+    /* width: 40px; */
+    /* border-radius: 50%; */
+    font-weight: 100;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight:600;
+}
+
+.main-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 15px; /* Added padding for small screens */
+}
+
+.main-container .greet p {
+    margin: 20px 0;
+    font-size: 2.5rem; /* Adjusted for responsiveness */
+    color: #c4c7c5;
+    font-weight: 500;
+    font-family: "Caveat", cursive;
+}
+
+.main-container .greet{
+    /* font-family: "Jacquarda Bastarda 9", serif !important; */
+    font-weight: 400;
+    font-style: normal;}
+
+.main .greet span {
+    background: linear-gradient(16deg, #a79383, #E7700D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.main .card {
+    height: 200px;
+    padding: 15px;
+    /* background-color: #f0f4f9; */
+    border: 3px solid #f0f4f9;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Centering content */
+    justify-content: center; /* Centering content */
+    text-align: center; /* Center text inside card */
+}
+
+
+
+.main .card p {
+    color: #585858;
+    font-size: 17px;
+}
+
+.main .card:hover {
+    background-color: #ebeff37f;
+}
+
+.main-bottom {
+    position: fixed;
+    bottom: 0;
+    /* width: 60%; */
+    /* max-width: 00px; */
+    margin: auto;
+    padding: 0 15px; /* Added padding for small screens */
+}
+
+.search-box {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f0f4f9;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.search-box img {
+    /* width: 24px; */
+    cursor: pointer;
+}
+
+.search-box input {
+    flex: 1;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.search-box div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.main .bottom-info {
+    width: 50%;
+    text-wrap: wrap;
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+}
+
+.result {
+    padding: 0 5%;
+    max-height: 70vh;
+    overflow-y: auto; /* Changed to auto for better scroll behavior */
+}
+
+.result::-webkit-scrollbar {
+    display: none;
+}
+
+.result-title {
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.result img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.result-data {
+    display: flex;
+    flex-direction: column; /* Adjusted to column for responsiveness */
+    gap: 20px;
+}
+
+.result-data p{
+    background-color: #f0f4f9 ;
+    overflow: scroll;
+    padding: 15px;
+}
+
+.loader-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loader-bar hr {
+    border-radius: 4px;
+    border: none;
+    background: linear-gradient(to right, #b1d5ee, #e7700d, #9ed7ff);
+    background-size: 800px 50px;
+    height: 10px;
+    width: 100%; /* Ensure full width */
+    animation: loader-bar 4s infinite linear;
+}
+
+@keyframes loader-bar {
+    0% {
+        background-position: -800px 0;
+    }
+    100% {
+        background-position: 800px 0;
+    }
+}
+
+
+.result-data p {
+    overflow: scroll;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.send-button button{
+    border: none;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.search-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-input{
+    /* position:fixed ; */
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.otpverify{
+    /* margin-top: 30px; */
+    max-width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #dfe4ea;
+    padding: 10px 13px;
+    border-radius: 50px;
+}
+
+.otpverify input{
+    flex: 1;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 8px;
+    font-size: 18px;
+}
+
+
+.otpverify button{
+    border: none;
+    background: transparent;
+    padding-right: 5px;
+}
+
+.prompt{
+    /* position: fixed; */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #d7dbdf;
+    padding: 10px 16px;
+    border-radius: 50px;
+
+}
+
+.prompt input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 8px ;
+    font-size: 18px;
+}
+
+.prompt-button{
+    background: rgb(70, 69, 69);
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.prompt-button button{
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+.loader {
+    display: inline-block;
+    animation: rotate .8s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
+/* Responsive Styles */
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-container .greet p {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .main .card {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .main-input{
+        flex-direction: column;
+    }
+
+    .otpverify input{
+        width: 50%;
+    }
+
+    .search-box {
+        width: 70%;
+        flex-direction: row;
+        gap: 10px;
+        margin: 0; /* Removed margin to avoid overflow */
+        padding: 10px; /* Ensure proper padding */
+    }
+
+    .search-box input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .main-bottom {
+        padding: 0 10px; /* Added padding for smaller screens */
+        /* display: flex; */
+        justify-content: center; /* Center content horizontally */
+    }
+
+    .main-bottom .search-box {
+        max-width: 100%; /* Ensure it fits within container */
+    }
+}
+

@@ -1,0 +1,166 @@
+.auth-sections {
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: #f1f2f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.auth-containers {
+  min-width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-containers form {
+  width: 90%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05),
+    0 20px 48px rgba(0, 0, 0, 0.05),
+    0 1px 4px rgba(0, 0, 0, 0.10);
+}
+
+
+
+.input-container {
+  width: 100%;
+}
+
+.input-label {
+  font-weight: 600;
+  margin-left: 3px;
+}
+
+.input-email {
+  margin-top: 7px;
+  padding: 7px 7px;
+  width: 100%; /* Updated to 100% */
+  box-sizing: border-box; /* Ensures padding and border are included */
+  border: 2px solid rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.auth-btn {
+  width: 100%;
+  margin-top: 0px;
+  background-color: #009dff;
+  border: 1px solid #0062ff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s; /* Reduced transition time */
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.auth-btn:hover {
+  background-color: #018ce3;
+}
+
+.otp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1px; /* Adds consistent spacing between OTP inputs */
+  margin-top: 17px;
+}
+
+.otp-input {
+  width: 50px; /* Updated width to a fixed size */
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.gpass-container {
+  background-color: #f5f5f5;
+  padding: 10px 7px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gpass-container div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gpass-container button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 7px;
+  padding: 6px 10px;
+  border-radius: 7px;
+  background-color: #4CAF50;
+  
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gpass-container button:hover {
+  background-color: #45a049;
+  
+}
+
+.gpass-container span {
+  display: inline-block;
+  /* width: 50px; Set a fixed width */
+  margin: 0px 5px;
+  text-align: center; /* Center text inside the span */
+  padding: 7px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace; /* Use a monospace font for uniform width */
+  font-size: 16px;
+}
+
+.password-container {
+  /* margin: 7px 0px; 
+  width: 100%; /* Re-enabled width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+
+.password-container input {
+  width: 100%;
+}
+
+.error {
+  font-size: 10px;
+  color: red;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+      transform: rotate(360deg);
+  }
+}
