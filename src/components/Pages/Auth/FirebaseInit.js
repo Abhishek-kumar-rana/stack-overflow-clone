@@ -2,7 +2,7 @@ import { initializeApp } from 'firebase/app';
 import { getMessaging } from 'firebase/messaging';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCk0FuAg0sLN5AhG4eB1aCfYh6MVaqUpCk",
+  apiKey: process.env.firebase_apikey,
   authDomain: "web-push-n.firebaseapp.com",
   projectId: "web-push-n",
   storageBucket: "web-push-n.appspot.com",
